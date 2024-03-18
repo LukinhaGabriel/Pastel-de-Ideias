@@ -1,0 +1,57 @@
+.wrapper-uploader{
+    position: relative;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+}
+
+.field-uploader{
+    position: absolute;
+    display: none;
+}
+
+#file-drag{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    cursor: pointer;
+}
+
+
+#start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#start.hidden{
+    display: none;
+}
+
+.ph-image{
+    fill: var(--red);
+}
+
+#file-drag span{
+    color: var(--red-dark)
+}
+
+@media screen and (max-width:375px){
+    .wrapper-uploader{
+        padding: 20px;
+    }
+    
+    #file-drag span{
+        font-size: 14px;
+    }
+}

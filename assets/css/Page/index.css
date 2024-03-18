@@ -1,0 +1,152 @@
+@import url(../components/switch.css);
+@import url(../components/button.css);
+@import url(../components/upload.css);
+
+main{
+    height: 100%;
+    margin-top: 2.875rem;
+    margin-bottom: 150px;
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 1.875rem #740B0B45;
+}
+
+
+.card__navbar{
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  2rem 1.875rem 2rem 3.75rem;
+    border-radius: 10px  10px 0 0;
+}
+
+
+.title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: var(--font-bold);
+    font-style: italic;
+    color: var(--red-dark);
+}
+
+
+.register{
+    margin-top: -16px;
+    padding: 0px 1.25rem 60px 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+form input, textarea{
+    width: 100%;
+    font-family: inherit;
+    border: 1px solid var(--red);
+    color: var(--red-dark);
+    border-radius: 10px;
+    padding: 0.563rem 0.5rem 0.625rem 1.25rem;
+}
+
+form input::placeholder, textarea::placeholder{
+    font-family: inherit;
+    color: var(--red-dark);
+}
+
+
+.group{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    align-items: center;
+    justify-items: center;
+    gap: 1.25rem;
+}
+
+
+@media screen and (max-width: 946px){
+    .card__navbar{
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 64px;    
+    }
+    .wrapper-switch{
+        position: absolute;
+        right: 24px;
+        bottom: 32px;    
+    }
+    .register{
+        position: relative;
+        z-index: 999px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .group{
+        grid-template-columns: 1fr;
+    }
+    form input{
+        width: 100%;
+        height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    main{
+        padding: 0 0.5rem;
+    }
+    .card__navbar{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .title{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media screen and (max-width:425px){
+    .title{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .title{
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width:350px){
+    .title{
+        text-align: left;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+
+

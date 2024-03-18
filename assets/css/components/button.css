@@ -1,0 +1,69 @@
+.button-list{
+    position: absolute;
+    display: flex;
+    gap: 2.188rem;
+    bottom: -1.5rem;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+}
+  
+.button{
+    width: 200px;
+    height: 60px;
+    
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem 2.562rem;
+    
+    font-size: 1.25rem;
+    line-height: 100%;
+    font-weight: var(--font-black);
+    text-transform: uppercase;
+    
+    border: none;
+    border-radius: 30px;
+    
+}
+
+
+.button.-clear{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.button.-clear:hover{
+    background-color: var(--red-dark);
+}
+
+.button.-register{
+    background-color: var(--yellow);
+    color: var(--red-dark);
+}
+
+.button.-register:hover{
+    background-color: #dfb200;
+}
+
+@media screen and (max-width: 600px){
+    .button-list{
+        gap: 0;
+        left: 0;
+        justify-content: space-evenly;
+    }
+    
+    .button{
+        width: 160px;
+        padding: 1rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .button{
+        width: 136px;
+        height: 48px;
+        padding: 1rem;
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,14 @@
+:root{
+    
+    --primary-font: "Roboto", sans-serif;
+
+    --red: #E43636;
+    --white: #fff;
+    --red-dark: #A03400;
+    --yellow: #FFCA00; 
+    --shadow-color: #740B0B45;
+
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-black: 900;
+}

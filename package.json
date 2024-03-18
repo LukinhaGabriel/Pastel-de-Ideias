@@ -1,0 +1,22 @@
+{
+  "name": "frontend-challenge-pastel",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Front-End Challenge</h1>",
+  "main": "index.js",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev"
+  },
+  "author": "Lucas Gabriel Moya",
+  "license": "ISC",
+  "devDependencies": {
+    "@nuxt/image": "^1.4.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@phosphor-icons/vue": "^2.1.6",
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  }
+}
