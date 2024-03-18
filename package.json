@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "<h1 align=\"center\">Front-End Challenge</h1>",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "author": "Lucas Gabriel Moya",
   "license": "ISC",
